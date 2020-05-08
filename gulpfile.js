@@ -1,9 +1,38 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+//compile scss into css
+function style() {
+    return gulp.src('src/scss/**/*.scss')
+    .pipe(sass().on('error',sass.logError))
+    .pipe(gulp.dest('src/css'))
+    .pipe(browserSync.stream());
+}
 
-gulp.task('sync', function() {
- browserSync.init({
- proxy: "my_project.dev",
- files: "*.css,*.php,css/*css"
-});
-});
+
+function watch() {
+    browserSync.init({
+        server: {
+           baseDir: "./src",
+           index: "/index.html"
+        }
+    });
+    gulp.watch('src/scss/**/*.scss', style)
+    gulp.watch('./*.html').on('change',browserSync.reload);
+    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+}
+
+exports.style = style;
+exports.watch = watch;
+
+// gulp.task('watch', gulp.series(gulp.parallel('browserSync', 'sass'),function a (){
+//     gulp.watch('src/scss/**/*.scss', gulp.series(['sass']));
+// }));
+
+// gulp.task('browserSync', function() {
+// browserSync.init({
+//     server: {
+//     baseDir: 'src'
+//     },
+// })
+// });

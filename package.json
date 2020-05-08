@@ -1,8 +1,8 @@
 {
   "name": "orange-portfolio",
   "version": "1.0.0",
-  "description": "redesigning my current portfolio",
-  "main": "index.html",
+  "description": "my orange portfolio",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +18,10 @@
   "homepage": "https://github.com/Zahrafatemi/Orange-Portfolio#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
   }
 }
