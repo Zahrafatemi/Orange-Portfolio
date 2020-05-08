@@ -1,0 +1,23 @@
+{
+  "name": "orange-portfolio",
+  "version": "1.0.0",
+  "description": "redesigning my current portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zahrafatemi/Orange-Portfolio.git"
+  },
+  "author": "Zahra Fatemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zahrafatemi/Orange-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Zahrafatemi/Orange-Portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}
