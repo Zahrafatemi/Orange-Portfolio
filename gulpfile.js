@@ -14,25 +14,12 @@ function watch() {
     browserSync.init({
         server: {
            baseDir: "./src",
-           index: "/index.html"
         }
     });
-    gulp.watch('src/scss/**/*.scss', style)
-    gulp.watch('./*.html').on('change',browserSync.reload);
-    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+    gulp.watch('src/scss/**/*.scss', style);
+    gulp.watch('src/*.html').on('change',browserSync.reload);
+    gulp.watch('src/js/**/*.js').on('change', browserSync.reload);
 }
 
 exports.style = style;
 exports.watch = watch;
-
-// gulp.task('watch', gulp.series(gulp.parallel('browserSync', 'sass'),function a (){
-//     gulp.watch('src/scss/**/*.scss', gulp.series(['sass']));
-// }));
-
-// gulp.task('browserSync', function() {
-// browserSync.init({
-//     server: {
-//     baseDir: 'src'
-//     },
-// })
-// });
