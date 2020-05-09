@@ -7169,18 +7169,26 @@ html, body {
 
 body {
   font-family: Avenir, sans-serif;
-  color: #111; }
+  color: #000; }
+
+.top-corner-shape {
+  position: relative; }
+
+.zahra-at-desk {
+  position: absolute;
+  transform: translateY(-100%);
+  top: 50%;
+  left: 0; }
 
 a {
   text-decoration: none;
   color: inherit; }
   a:hover {
     text-decoration: none;
-    color: black; }
+    color: inherit; }
 
 .cta {
   position: relative;
-  margin: auto;
   padding: 19px 22px;
   transition: all .2s ease; }
   .cta:before {
@@ -7190,7 +7198,7 @@ a {
     left: 0;
     display: block;
     border-radius: 28px;
-    background: rgba(255, 171, 157, 0.5);
+    background: rgba(255, 114, 94, 0.5);
     width: 56px;
     height: 56px;
     transition: all .3s ease; }
@@ -7209,14 +7217,14 @@ a {
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: #111;
+    stroke: #000;
     stroke-width: 2;
     transform: translateX(-5px);
     transition: all .3s ease; }
   .cta:hover:before {
     width: 100%;
-    background: #ffab9d; }
-  .cta svg {
+    background: rgba(255, 114, 94, 0.8); }
+  .cta:hover svg {
     transform: translateX(0); }
-  .cta:active {
-    transform: scale(0.96); }
+  .cta:active:before {
+    transform: scale(0.9); }
