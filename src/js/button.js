@@ -1,6 +1,6 @@
-const hireMeButton = document.getElementById('hire-me');
+const desk = document.getElementById('Desk--inject-106');
 
-hireMeButton.onfocus = function() {
+function a() {
     //hireMeButton.innerText = ':)';
-    hireMeButton.style.backgroundColor = "blue";
+    //document.body.style.backgroundColor = "blue";
 }

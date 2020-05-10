@@ -57,21 +57,26 @@ body{
 
 // Banner styling
 
-.top-corner-shape{
-  //max-width: 600px;
-  position: relative;
-}
+.banner{
+  .top-corner-shape{
+    //max-width: 600px;
+    position: relative;
+    margin-top: -30px;
+    margin-right: -30px;
+  }
 
-.zahra-at-desk{
-  //max-width: 600px;
-  position: absolute;
-  transform: translateY(-100%);
-  top: 50%;
-  left: 0;
+  .zahra-at-desk{
+    margin-top: -270px;
+  }
 }
 
 
 // Hire me button styling
+
+.hire-me{
+
+  //margin-top: 100px;
+
 a{
   text-decoration: none;
   color: inherit;
@@ -93,7 +98,7 @@ a{
     left: 0;
     display: block;
     border-radius: 28px;
-    background: rgba($primary-color,.5);
+    background: rgba($primary-color,.4);
     width: 56px;
     height: 56px;
     transition: all .3s ease;
@@ -136,5 +141,6 @@ a{
     transform: scale(0.90);
     }
   }
+}
 }
 
