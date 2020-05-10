@@ -7174,8 +7174,6 @@ body {
 .banner {
   position: relative;
   display: block; }
-  .banner .top-corner-shape {
-    margin: -90px -90px auto auto; }
   .banner .zahra-at-desk {
     position: absolute;
     width: 80%;
@@ -7184,7 +7182,7 @@ body {
     transform: translate(-50%, -35%); }
 
 .hire-me {
-  margin-top: 50px; }
+  margin-top: 100px; }
   .hire-me a {
     text-decoration: none;
     color: inherit; }
@@ -7232,3 +7230,7 @@ body {
       transform: translateX(0); }
     .hire-me .cta:active:before {
       transform: scale(0.9); }
+
+.recent-work {
+  width: 90%;
+  margin: 0px auto; }
